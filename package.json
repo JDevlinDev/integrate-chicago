@@ -1,0 +1,30 @@
+{
+  "name": "integrate-chicago",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Source code for Integrate Chicago business website.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": [
+    "typescript",
+    "web-framework",
+    "web-development",
+    "astro",
+    "html",
+    "css",
+    "information-technology",
+    "audio-visual",
+    "point-of-sale",
+    "digital-signage",
+    "tech-support"
+  ],
+  "author": "Jason Sherrick",
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^5.9.4"
+  }
+}
