@@ -1,0 +1,25 @@
+:root {
+    --width-screen-sm: 576px;
+    --width-screen-md: 768px;
+    --width-screen-lg: 992px;
+    --width-screen-xl: 1200px;
+    --dsp-inline-block-md: none;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    :root {
+        --dsp-inline-block-md: inline-block;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
