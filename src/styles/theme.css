@@ -1,0 +1,24 @@
+:root {
+  --color-neutral-100: hsl(0 0% 98% / 100%);
+  --color-neutral-200: hsl(0 0% 93% / 100%);
+  --color-neutral-300: hsl(0 0% 86% / 100%);
+  --color-neutral-400: hsl(0 0% 77% / 100%);
+  --color-neutral-500: hsl(0 0% 65% / 100%);
+  --color-neutral-600: hsl(0 0% 51% / 100%);
+  --color-neutral-700: hsl(0 0% 40% / 100%);
+  --color-neutral-800: hsl(0 0% 26% / 100%);
+  --color-neutral-900: hsl(0 0% 10% / 100%);
+}
+
+body {
+    --clr-font-dark: var(--color-neutral-900);
+    --clr-font-light: var(--color-neutral-100);
+
+    --clr-font-current: var(--clr-font-light);
+    --clr-bkg-current: var(--color-neutral-900);
+
+    background-color: var(--clr-bkg-current);
+    color: var(--clr-font-current);
+
+    
+}
