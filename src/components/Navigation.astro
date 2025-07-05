@@ -1,44 +1,57 @@
 ---
 const pages = ['home', 'about', 'services', 'blog', 'contact'];
 ---
-<div class="top-nav-container">
-   <a class="logo">
-
-   </a>
-   <button title="Open main menu" class="links"></button>
-      
+<div class="container">
+   <div class="top-nav-container">
+      <a href="/" class="logo">
+   
+      </a>
+      <button title="Open main menu" class="button has-icon menu-button-toggle" aria-label=" Open main menu">
+         <span class="icon-wrap">
+            <span class="icon icon-menu"></span>
+         </span>
+      </button>
+   </div>
+   <div class="top-nav-main">
+      <nav class="main-nav">
+         <ul class="main-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/blog">Blog</a></li>
+         </ul>
+      </nav>
+      <div class="contact-container">
+         <a href="/contact" class="button primary-button">Contact</a>
+      </div>
    </div>
 </div>
-<div class="top-nav-links">
-   <nav class="main">
-      <ul class="main__menu">
-         <li><a href="/">Home</a></li>
-         <li><a href="/about/">About</a></li>
-         <li><a href="/services">Services</a></li>
-         <li><a href="/blog">Blog</a></li>
-         <li><a href="/contact">Contact</a></li>
-      </ul>
-   </nav>
-</div>
-
 <style>
    @layer components {
-      nav {
-         display: flex;
-         justify-content: space-between;
+      .container .top-nav-container {
          align-items: center;
+         display: flex;
+         gap: .5rem;
+      }
+
+      .container {
+         margin-inline: auto;
+         padding-inline: 1rem;
+      }
+
+      .top-nav-main {
+         display: var(--dsp-flex-md);
+      }
+
+      .main-nav {
          height: 100%;
-         padding-inline: .5rem;
+         display: flex;
       }  
    
-      .links {
-         display: var(--dsp-inline-block-md);
-
-         .links__list {
-            display: flex;
-            align-items: center;
-            gap: .5rem;
-         }
+      .main-menu {
+         display: flex;
+         align-items: center;
+         gap: .5rem;
       }
    }
 </style>

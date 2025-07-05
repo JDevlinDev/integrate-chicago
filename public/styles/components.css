@@ -1,0 +1,9 @@
+.button {
+    --button-height: var(--form-elem-height, 2rem);
+    --button-padding: 0.5rem;
+    --button-radius: var(--elem-radius, 0.25rem);
+    border-radius: var(--button-radius);
+    height: var(--button-height);
+    display: inline-block;
+    padding: 0;
+}

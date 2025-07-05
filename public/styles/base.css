@@ -3,23 +3,51 @@
     --width-screen-md: 768px;
     --width-screen-lg: 992px;
     --width-screen-xl: 1200px;
-    --dsp-inline-block-md: none;
+    --visibility-toggle: none;
+
+    --dsp-inline-block-sm: var(--visibility-toggle);
+    --dsp-inline-block-md: var(--visibility-toggle);
+    --dsp-inline-block-lg: var(--visibility-toggle);
+    --dsp-inline-block-xl: var(--visibility-toggle);
+    --dsp-flex-sm: var(--visibility-toggle);
+    --dsp-grid-sm: var(--visibility-toggle);
+    --dsp-flex-md: var(--visibility-toggle);
+    --dsp-grid-md: var(--visibility-toggle);
+    --dsp-flex-lg: var(--visibility-toggle);
+    --dsp-grid-lg: var(--visibility-toggle);
+    --dsp-flex-xl: var(--visibility-toggle);
+    --dsp-grid-xl: var(--visibility-toggle);
 }
 
 @media (min-width: 576px) {
-
+    :root {
+        --dsp-inline-block-sm: inline-block;
+        --dsp-flex-sm: flex;
+        --dsp-grid-sm: grid;
+    }
 }
 
 @media (min-width: 768px) {
     :root {
         --dsp-inline-block-md: inline-block;
+        --dsp-flex-md: flex;
+        --dsp-grid-md: grid;
     }
 }
 
 @media (min-width: 992px) {
-
+    :root {
+        --dsp-inline-block-lg: inline-block;
+        --dsp-flex-lg: flex;
+        --dsp-grid-lg: grid;
+    }
+    
 }
 
 @media (min-width: 1200px) {
-
+    :root {
+        --dsp-inline-block-xl: inline-block;
+        --dsp-flex-xl: flex;
+        --dsp-grid-xl: grid;
+    }
 }
