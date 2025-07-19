@@ -25,6 +25,6 @@
   "author": "Jason Sherrick",
   "license": "MIT",
   "dependencies": {
-    "astro": "^5.10.2"
+    "astro": "^5.12.0"
   }
 }
