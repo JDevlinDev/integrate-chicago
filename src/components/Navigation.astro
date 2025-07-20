@@ -1,31 +1,20 @@
 ---
 const pages = ['home', 'about', 'services', 'blog', 'contact'];
 ---
-<div class="container">
-   <div class="top-nav-container">
-      <a href="/" class="logo">
-   
-      </a>
-      <button title="Open main menu" class="button has-icon menu-button-toggle" aria-label=" Open main menu">
-         <span class="icon-wrap">
-            <span class="icon icon-menu"></span>
-         </span>
-      </button>
-   </div>
-   <div class="top-nav-main">
-      <nav class="main-nav">
-         <ul class="main-menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/blog">Blog</a></li>
-         </ul>
-      </nav>
-      <div class="contact-container">
-         <a href="/contact" class="button primary-button">Contact</a>
-      </div>
-   </div>
-</div>
+<nav class="nav-container">
+   <button class="button has-icon home-button">
+      <a href="/" class="logo"></a>
+   </button>
+   <ul class="main-menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/blog">Blog</a></li>
+   </ul>
+   <button class="button primary-button contact-container">
+      <a href="/contact">Contact</a>
+   </button>
+</nav>
 <style>
    @layer components {
       .container .top-nav-container {
